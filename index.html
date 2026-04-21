@@ -161,27 +161,33 @@ footer{border-top:1px solid var(--border);padding:1.5rem 2.5rem;
 }
   .contact-links{
   display:flex;
-  gap:1rem;
-  justify-content:center;
   flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
 }
 
 .cl{
-  word-break:break-word;
+  flex:1 1 200px;
+  max-width:100%;
   text-align:center;
+  word-break:break-word;
 }
 
 @media(max-width:600px){
+
   .contact-box{
-    padding:2rem 1rem;
+    padding:1.5rem 1rem;
   }
- .contact-links{
+
+  .contact-links{
     flex-direction:column;
-    align-items:center;
+    align-items:stretch;
   }
 
   .cl{
-    font-size:10px;
+    width:100%;
+    font-size:12px;
+    padding:12px;
   }
 }
 </style>
